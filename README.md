@@ -4,6 +4,16 @@
 
 官网：<https://livis.fastaibest.xyz>
 
+## 主机端一键安装
+
+```sh
+curl -fsSL https://livis.fastaibest.xyz/install.sh | sh
+```
+
+装 openhook、配 Claude Code hooks、设开机自启、按需装 mosh/herdr，最后画出配对二维码。
+重复跑安全（幂等）。非交互加 `-s -- --yes`，跳过配对加 `--no-pair`。
+脚本源码就是本仓的 [`install.sh`](install.sh)。
+
 ## 下载
 
 APK 见本仓库 [Releases](https://github.com/lrsyddrl/livis-releases/releases) 页面，下载 `livis-v*.apk` 直接安装。
